@@ -7,7 +7,7 @@ const total=myNums.reduce(function(acc,cval){
     return acc+cval
    
 },0)
-// console.log('t', total);
+// console.log('t', total); 
 const shopkart=[
     {
         item:'data-scence',
