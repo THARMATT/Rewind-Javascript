@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nigam</h1>
+    <button id="button">click to stop</button>
+</body>
+<script>
+
+    const sayNigam=function(){ //settimeout only run once
+        console.log("nigam")
+    }
+    setTimeout(sayNigam,3000)
+   const changeText=function(){
+    document.querySelector('h1').innerHTML='nigam is back'
+   }
+  const change= setTimeout(changeText,3000)
+ document.querySelector('#button').addEventListener('click',function(){
+    clearTimeout(change)
+    console.log('stoped')
+ })
+</script>
+</html>
